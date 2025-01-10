@@ -8,41 +8,87 @@
     border: 1px solid black;
     color: white;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 0.5fr 2fr;
 }
 
 .dashboard {
     background-color: hsl(218, 82%, 62%);
-    border: 1px solid black;
+    border: 0;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 }
 
-.dashboard-top div{
+.dashboard-icon {
+    width: 2rem;
+}
+
+.dashboard div{
     display: grid;
     grid-template-columns: 2fr 4fr 3fr;
+    /* margin-top: 1rem; */
 }
 
-.dashboard-top div img {
+.dashboard div img {
     grid-column: 1 / 2;
+    margin-left: 1rem;
 }
 
-.dashboard-top div p {
-    grid-column: 2 / 3;
+.dashboard div p {
+    margin-left: 1rem;
 }
 
-.dashboard-bottom div{
-    display: grid;
-    grid-template-columns: 1fr 9fr;
+.home,
+.settings
+{
+    margin-top: 3rem;
 }
 
 .header {
     border: 1px solid blue;
+    color: black;
+    display: grid;
+    /* grid-column: 1 / 3;
+    grid-row: 1 / 2; */
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-left-top {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.search-bar {
+    background-color: hsl(218, 42%, 93%);
+    border: 0;
+    border-radius: 15px;
+    width: 16rem;
+}
+
+.header-left-bottom {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.header-right-top {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-
 }
+
+.header-right-bottom {
+    grid-column: 2 / 3;
+}
+
+.click {
+    background-color: hsl(218, 82%, 62%);
+    border: 0;
+    border-radius: 15px;
+    color: white;
+    height: 1.5rem;
+    width: 3.5rem;
+}
+
 .main-content {
     background-color: hsl(218, 42%, 93%);
     color: black;
@@ -52,12 +98,21 @@
 .projects {
     background-color: hsl(218, 42%, 93%);
     display: grid;
-    gap: 5px;
+    gap: 15px;
     grid-template-columns: 3fr 3fr 2fr;
-    grid-template-rows: 2fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
+}
+
+.profile-icon-big {
+    width: 3rem;
+}
+
+.profile-icon-small {
+    width: 2rem;
 }
 
 .icon {
+    cursor: pointer;
     width: 1.5rem;
 }
 
@@ -66,41 +121,55 @@
 }
 
 .super-cool-div {
+    border-left: 5px solid hsl(53, 96%, 50%);
+    border-radius: 15px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
 
 .less-cool-div {
+    border-left: 5px solid hsl(53, 96%, 50%);
+    border-radius: 15px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
 .announcements-div {
+    border-radius: 15px;
     grid-column: 3 / 4;
     grid-row: 1 / 3;
 }
 
 .impossible-div {
+    border-left: 5px solid hsl(53, 96%, 50%);
+    border-radius: 15px;
     grid-column: 1 / 2;
     grid-row: 2 / 4;
 }
 
 .easy-peasy-div {
+    border-left: 5px solid hsl(53, 96%, 50%);
+    border-radius: 15px;
     grid-column: 2 / 3;
     grid-row: 2 / 4;
 }
 
 .trending-div {
+    border-radius: 15px;
     grid-column: 3 / 4;
     grid-row: 3 / 5;
 }
 
 .ad-blockers-div {
+    border-left: 5px solid hsl(53, 96%, 50%);
+    border-radius: 15px;
     grid-column: 1 / 2;
     grid-row: 4 / 5;
 }
 
 .money-maker-div {
+    border-left: 5px solid hsl(53, 96%, 50%);
+    border-radius: 15px;
     grid-column: 2 / 3;
     grid-row: 4 / 5;
 }
