@@ -14,7 +14,7 @@
                     <img class="dashboard-icon" src="./assets/view-dashboard.svg" alt="Dashboard Icon">
                     <h2 class="dashboard-name">Dashboard</h2>
                 </div>
-                <div class="home">
+                <div id="home">
                     <img class="icon" src="./assets/home-circle.svg" alt="Home Icon">
                     <p class="">Home</p>
                 </div>
@@ -39,7 +39,7 @@
                     <p class="">Communities</p>
                 </div>
 
-                <div class="settings">
+                <div id="settings">
                     <img class="icon" src="./assets/cog.svg" alt="Settings Icon">
                     <p class="">Settings</p>
                 </div>
@@ -58,10 +58,10 @@
                     <img class="icon" src="assets/magnify.svg" alt="Search icon">
                     <textarea class="search-bar"></textarea>
                 </div>
-                <div  lang="header-left-bottom">
+                <div  class="header-left-bottom">
                     <img class="profile-icon-big" src="./assets/face-man-profile.svg" alt="">
-                    <p>Hi there,</p>
-                    <h2>Morgan Oakley (@morgan)</h2>
+                    <p>Hi there, <br> <span class="morgan">Morgan Oakley (@morgan)</span>
+                    </p>
                 </div>
                 <div class="header-right-top">
                     <img class="icon" src="./assets/bell.svg" alt="Notification Icon">
@@ -75,106 +75,126 @@
                 </div>
             </div>
             <div class="main-content">
-                <h2>Your Projects</h2>
-                <h2>Annoucements</h2>
+                <div class="project-headings">
+                    <h2 class="your-project">Your Projects</h2>
+                    <h2 class="annouce">Annoucements</h2>
+                </div>
                 <div class="projects">
-                    <div class="super-cool-div">
-                        <h3 class="">Super Cool Project</h3>
-                        <p class=""> Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis fells accumsan nec.</p>
-                        <img class="icon" src="./assets/star-david.svg" alt="Star or Favorite ICON">
-                        <img class="icon" src="./assets/eye-arrow-right.svg" alt="icon for viewing this projext">
-                        <img class="icon" src="./assets/share-variant.svg" alt="Share icon">
-                    </div>
-                    <div class="less-cool-div">
-                        <h3 class="">Less Cool Project</h3>
-                        <p class="">Nullam condimentum ipsum ut letus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
-                        <img class="icon" src="./assets/star-david.svg" alt="Star or Favorite ICON">
-                        <img class="icon" src="./assets/eye-arrow-right.svg" alt="icon for viewing this projext">
-                        <img class="icon" src="./assets/share-variant.svg" alt="Share icon">
-                    </div>
-                    <div class="announcements-div">
-                        <div>
-                            <h3>Site Maintenance</h3>
-                            <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue..</p>
-                        </div>
-                        <div>
-                            <h3>Community Share Day</h3>
-                            <p>Nam vel lectus tincidunt, rutrum nulla eu, omare libero. Allquam dictum accumsan porttitor...</p>
-                        </div>
-                        <div>
-                            <h3>Updated Privacy Policy</h3>
-                            <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
-                        </div>
-                    </div>
-                    <div class="impossible-div">
-                        <h3 class="">Impossible App</h3>
-                        <p class="">
-                            In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.
-                        </p>
-                        <img class="icon" src="./assets/star-david.svg" alt="Star or Favorite ICON">
-                        <img class="icon" src="./assets/eye-arrow-right.svg" alt="icon for viewing this projext">
-                        <img class="icon" src="./assets/share-variant.svg" alt="Share icon">
-                    </div>
-                    <div class="easy-peasy-div">
-                        <h3 class="">Easy Peasy App</h3>
-                        <p class="">
-                            Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim uma eget accumsan aliquam. Curabityr dignissim nisi tortor commodo, ac bibendum magna tincidunt.
-                        </p>
-                        <img class="icon" src="./assets/star-david.svg" alt="Star or Favorite ICON">
-                        <img class="icon" src="./assets/eye-arrow-right.svg" alt="icon for viewing this projext">
-                        <img class="icon" src="./assets/share-variant.svg" alt="Share icon">
-                    </div>
-                    <div class="treding-div">
-                        <div>
-                            <img src="" alt="">
-                            <div class="">
-                                <img src="" alt="Profile image">
-                                <p>@tegan</p>
-                                <p>World Peace Builder</p>
+                    <div class="project-a">
+                        <div class="super-cool-div">
+                            <h3 class="">Super Cool Project</h3>
+                            <p class=""> Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis fells accumsan nec.</p>
+                            <div class="images-left">
+                                <img class="icon" src="./assets/star-david.svg" alt="Star or Favorite ICON">
+                                <img class="icon" src="./assets/eye-arrow-right.svg" alt="icon for viewing this projext">
+                                <img class="icon" src="./assets/share-variant.svg" alt="Share icon">
                             </div>
                         </div>
-                        <div>
-                            <img src="" alt="">
-                            <div class="">
-                                <img src="" alt="Profile image">
-                                <p>@morgan</p>
-                                <p>Super Cool Project</p>
+                        <div class="impossible-div">
+                            <h3 class="">Impossible App</h3>
+                            <p class="">
+                                In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.
+                            </p>
+                            <div class="images-left">
+                                <img class="icon" src="./assets/star-david.svg" alt="Star or Favorite ICON">
+                                <img class="icon" src="./assets/eye-arrow-right.svg" alt="icon for viewing this projext">
+                                <img class="icon" src="./assets/share-variant.svg" alt="Share icon">
                             </div>
                         </div>
-                        <div>
-                            <img src="" alt="">
-                            <div class="">
-                                <img src="" alt="Profile image">
-                                <p>@hendall</p>
-                                <p>Life Changing App</p>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="" alt="">
-                            <div class="">
-                                <img src="" alt="Profile image">
-                                <p>@alex</p>
-                                <p>No Traffic Maker</p>
+                        <div class="ad-blockers-div">
+                            <h3 class="">Ad Blocker</h3>
+                            <p class="">
+                                Quisique eget rutrum nisl. Nam augue justo, cursus vitae metus vel. pharetra hendrerit felis. Aliquam sed makesuada eros.
+                            </p>
+                            <div class="images-left">
+                                <img class="icon" src="./assets/star-david.svg" alt="Star or Favorite ICON">
+                                <img class="icon" src="./assets/eye-arrow-right.svg" alt="icon for viewing this projext">
+                                <img class="icon" src="./assets/share-variant.svg" alt="Share icon">
                             </div>
                         </div>
                     </div>
-                    <div class="ad-blockers-div">
-                        <h3 class="">Ad Blocker</h3>
-                        <p class="">
-                            Quisique eget rutrum nisl. Nam augue justo, cursus vitae metus vel. pharetra hendrerit felis. Aliquam sed makesuada eros.
-                        </p>
-                        <img class="icon" src="./assets/star-david.svg" alt="Star or Favorite ICON">
-                        <img class="icon" src="./assets/eye-arrow-right.svg" alt="icon for viewing this projext">
-                        <img class="icon" src="./assets/share-variant.svg" alt="Share icon">
+
+                    <div class="project-b">
+                        <div class="less-cool-div">
+                            <h3 class="">Less Cool Project</h3>
+                            <p class="">Nullam condimentum ipsum ut letus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                            <div class="images-left">
+                                <img class="icon" src="./assets/star-david.svg" alt="Star or Favorite ICON">
+                                <img class="icon" src="./assets/eye-arrow-right.svg" alt="icon for viewing this projext">
+                                <img class="icon" src="./assets/share-variant.svg" alt="Share icon">
+                            </div>
+                        </div>
+                        <div class="easy-peasy-div">
+                            <h3 class="">Easy Peasy App</h3>
+                            <p class="">
+                                Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim uma eget accumsan aliquam. Curabityr dignissim nisi tortor commodo, ac bibendum magna tincidunt.
+                            </p>
+                            <div class="images-left">
+                                <img class="icon" src="./assets/star-david.svg" alt="Star or Favorite ICON">
+                                <img class="icon" src="./assets/eye-arrow-right.svg" alt="icon for viewing this projext">
+                                <img class="icon" src="./assets/share-variant.svg" alt="Share icon">
+                            </div>
+                        </div>
+                        <div class="money-maker-div">
+                            <h3 class="">Money Maker</h3>
+                            <p class="">
+                                Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellensque mollis nec sem vel aliquam.
+                            </p>
+                            <div class="images-left">
+                                <img class="icon" src="./assets/star-david.svg" alt="Star or Favorite ICON">
+                                <img class="icon" src="./assets/eye-arrow-right.svg" alt="icon for viewing this projext">
+                                <img class="icon" src="./assets/share-variant.svg" alt="Share icon">
+                            </div>
+                        </div>
                     </div>
-                    <div class="money-maker-div">
-                        <h3 class="">Money Maker</h3>
-                        <p class="">
-                            Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellensque mollis nec sem vel aliquam.
-                        </p>
-                        <img class="icon" src="./assets/star-david.svg" alt="Star or Favorite ICON">
-                        <img class="icon" src="./assets/eye-arrow-right.svg" alt="icon for viewing this projext">
-                        <img class="icon" src="./assets/share-variant.svg" alt="Share icon">
+
+                    <div class="project-c">
+                        <div class="announcements-div">
+                            <div class="site-maintain">
+                                <h3>Site Maintenance</h3>
+                                <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue..</p>
+                                <hr>
+                            </div>
+                            <div class="community-share">
+                                <h3>Community Share Day</h3>
+                                <p>Nam vel lectus tincidunt, rutrum nulla eu, omare libero. Allquam dictum accumsan porttitor...</p>
+                                <hr>
+                            </div>
+                            <div class="updated-privacy">
+                                <h3>Updated Privacy Policy</h3>
+                                <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+                            </div>
+                        </div>
+                        <div class="trending-div">
+                            <div>
+                                <img src="" alt="">
+                                <div class="profile-line">
+                                    <img class="profile-icon-small" src="./assets/face-man-profile.svg" alt="Profile Image">
+                                    <p>@tegan <br> World Peace Builder</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <div class="profile-line">
+                                    <img class="profile-icon-small" src="./assets/face-woman-profile.svg" alt="Profile Image">
+                                    <p>@morgan <br> Super Cool Project</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <div class="profile-line">
+                                    <img class="profile-icon-small" src="./assets/face-man-profile.svg" alt="Profile Image">
+                                    <p>@hendall <br> Life Changing App</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                                <div class="profile-line">
+                                    <img class="profile-icon-small" src="./assets/face-woman-profile.svg" alt="Profile Image">
+                                    <p>@alex <br> No Traffic Maker</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

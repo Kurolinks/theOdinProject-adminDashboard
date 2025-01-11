@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,8 +10,15 @@
     border: 1px solid black;
     color: white;
     display: grid;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: small;
+    font-style: normal;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 0.5fr 2fr;
+    grid-template-rows: 0.1fr  1fr;
+}
+
+.container p {
+    font-size: 14px;
 }
 
 .dashboard {
@@ -26,6 +35,7 @@
 .dashboard div{
     display: grid;
     grid-template-columns: 2fr 4fr 3fr;
+    margin-top: 1rem;
     /* margin-top: 1rem; */
 }
 
@@ -38,18 +48,15 @@
     margin-left: 1rem;
 }
 
-.home,
-.settings
+#home,
+#settings
 {
     margin-top: 3rem;
 }
 
 .header {
-    border: 1px solid blue;
     color: black;
     display: grid;
-    /* grid-column: 1 / 3;
-    grid-row: 1 / 2; */
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 1fr;
 }
@@ -67,8 +74,15 @@
 }
 
 .header-left-bottom {
+    display: grid;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    grid-template-columns: 1fr 4fr 6fr;
+}
+
+.morgan {
+    font-size: 0.9rem;
+    font-weight: 900;
 }
 
 .header-right-top {
@@ -95,12 +109,60 @@
     grid-column: 2 / 3;
 }
 
+.project-headings {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    height: 4rem;
+    padding-top: 1.5rem;
+}
+
+.your-project {
+    margin-left: 3rem;
+}
+
+.annouce {
+    margin-left: 17rem;
+}
+
 .projects {
     background-color: hsl(218, 42%, 93%);
     display: grid;
     gap: 15px;
-    grid-template-columns: 3fr 3fr 2fr;
-    grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
+    grid-template-columns: 1fr 1fr 0.7fr;
+}
+
+.project-a {
+    display: grid;
+    gap: 15px;
+    grid-template-rows: repeat(3, 0.2fr);
+    margin-left: 1rem;
+}
+
+.project-a div {
+    background-color: white;
+    padding: 20px;
+}
+
+.project-b {
+    display: grid;
+    gap: 15px;
+    grid-template-rows: repeat(3, 0.2fr);
+}
+
+.project-b div {
+    background-color: white;
+    padding: 20px;
+}
+
+.project-c {
+    display: grid;
+    gap: 15px;
+    grid-template-rows: 0.3fr 0.3fr;
+}
+
+.project-c div {
+    background-color: white;
+    padding: 20px;
 }
 
 .profile-icon-big {
@@ -116,60 +178,72 @@
     width: 1.5rem;
 }
 
-.projects div {
-    background-color: white;
-}
-
 .super-cool-div {
     border-left: 5px solid hsl(53, 96%, 50%);
     border-radius: 15px;
-    grid-column: 1 / 2;
     grid-row: 1 / 2;
-}
-
-.less-cool-div {
-    border-left: 5px solid hsl(53, 96%, 50%);
-    border-radius: 15px;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-.announcements-div {
-    border-radius: 15px;
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
 }
 
 .impossible-div {
     border-left: 5px solid hsl(53, 96%, 50%);
     border-radius: 15px;
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
-}
-
-.easy-peasy-div {
-    border-left: 5px solid hsl(53, 96%, 50%);
-    border-radius: 15px;
-    grid-column: 2 / 3;
-    grid-row: 2 / 4;
-}
-
-.trending-div {
-    border-radius: 15px;
-    grid-column: 3 / 4;
-    grid-row: 3 / 5;
+    grid-row: 2 / 3;
 }
 
 .ad-blockers-div {
     border-left: 5px solid hsl(53, 96%, 50%);
     border-radius: 15px;
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
+    grid-row: 3 / 4;
+}
+
+.less-cool-div {
+    border-left: 5px solid hsl(53, 96%, 50%);
+    border-radius: 15px;
+    grid-row: 1 / 2;
+}
+
+.images-left {
+    margin-left: 200px;
+    height: 20px;
+}
+
+.easy-peasy-div {
+    border-left: 5px solid hsl(53, 96%, 50%);
+    border-radius: 15px;
+    grid-row: 2 / 3;
 }
 
 .money-maker-div {
     border-left: 5px solid hsl(53, 96%, 50%);
     border-radius: 15px;
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
+    grid-row: 3 / 4;
+}
+
+.announcements-div {
+    border-radius: 15px;
+    grid-row: 1 / 2;
+    padding: 0;
+}
+
+.announcements-div div {
+    height: 8.5rem;
+}
+
+.trending-div {
+    border-radius: 15px;
+    grid-row: 2 / 3;
+}
+
+.trending-div div {
+    padding: 0;
+}
+
+.profile-line {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+hr {
+    border: -1rem solid grey;
+    margin-top: 1.1rem;
 }
