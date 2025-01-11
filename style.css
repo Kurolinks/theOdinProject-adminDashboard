@@ -13,7 +13,7 @@
     font-family: "Montserrat", serif;
     font-optical-sizing: small;
     font-style: normal;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1.1fr 6fr;
     grid-template-rows: 0.1fr  1fr;
 }
 
@@ -28,11 +28,16 @@
     grid-row: 1 / 3;
 }
 
+.dashboard-name {
+    font-size: 20px;
+}
+
 .dashboard-icon {
-    width: 2rem;
+    width: 1.8rem;
 }
 
 .dashboard div{
+    cursor: pointer;
     display: grid;
     grid-template-columns: 2fr 4fr 3fr;
     margin-top: 1rem;
@@ -57,8 +62,9 @@
 .header {
     color: black;
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 3fr 1.8fr;
     grid-template-rows: 1fr 1fr;
+    padding-left: 35px;
 }
 
 .header-left-top {
@@ -70,7 +76,8 @@
     background-color: hsl(218, 42%, 93%);
     border: 0;
     border-radius: 15px;
-    width: 16rem;
+    margin-top: 10px;
+    width: 34rem;
 }
 
 .header-left-bottom {
@@ -80,18 +87,32 @@
     grid-template-columns: 1fr 4fr 6fr;
 }
 
+.header-left-bottom > p {
+    margin-top: 5px;
+}
+
 .morgan {
     font-size: 0.9rem;
     font-weight: 900;
 }
 
 .header-right-top {
+    display: grid;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    grid-template-columns: 0.6fr 0.6fr 4fr;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.name {
+    font-size: 15px;
+    margin-top: 5px;
 }
 
 .header-right-bottom {
     grid-column: 2 / 3;
+    margin-left: 5px;
 }
 
 .click {
@@ -99,8 +120,15 @@
     border: 0;
     border-radius: 15px;
     color: white;
+    cursor: pointer;
     height: 1.5rem;
-    width: 3.5rem;
+    margin-top: 10px;
+    width: 4rem;
+}
+
+.two,
+.three {
+    margin-left: 25px;
 }
 
 .main-content {
@@ -117,59 +145,63 @@
 }
 
 .your-project {
-    margin-left: 3rem;
+    font-size: 16px;
+    margin-left: 1rem;
 }
 
 .annouce {
-    margin-left: 17rem;
+    font-size: 16px;
+    margin-left: 15rem;
 }
 
 .projects {
     background-color: hsl(218, 42%, 93%);
     display: grid;
     gap: 15px;
-    grid-template-columns: 1fr 1fr 0.7fr;
+    grid-template-columns: 1fr 1fr 0.8fr;
+    margin-bottom: 1.2rem;
+}
+
+.project-a, .project-b, .project-c {
+    display: grid;
+    gap: 15px;
 }
 
 .project-a {
-    display: grid;
-    gap: 15px;
-    grid-template-rows: repeat(3, 0.2fr);
+    grid-template-rows: repeat(3, 0.5fr);
     margin-left: 1rem;
 }
 
-.project-a div {
-    background-color: white;
-    padding: 20px;
-}
-
-.project-b {
-    display: grid;
-    gap: 15px;
-    grid-template-rows: repeat(3, 0.2fr);
-}
-
-.project-b div {
-    background-color: white;
-    padding: 20px;
-}
-
-.project-c {
-    display: grid;
-    gap: 15px;
-    grid-template-rows: 0.3fr 0.3fr;
-}
-
+.project-a div,
+.project-b div,
 .project-c div {
     background-color: white;
     padding: 20px;
 }
 
+.project-a h3,
+.project-b h3,
+.project-c h3 {
+    font-size: 16px;
+}
+
+.project-b {
+    grid-template-rows: repeat(3, 0.5fr);
+}
+
+.project-c {
+    grid-template-rows: 0.3fr 0.3fr;
+    margin-right: 1.2rem;
+    padding-top: 0;
+}
+
 .profile-icon-big {
+    cursor: pointer;
     width: 3rem;
 }
 
 .profile-icon-small {
+    cursor: pointer;
     width: 2rem;
 }
 
@@ -203,7 +235,7 @@
 }
 
 .images-left {
-    margin-left: 200px;
+    margin-left: 180px;
     height: 20px;
 }
 
@@ -226,12 +258,22 @@
 }
 
 .announcements-div div {
-    height: 8.5rem;
+    height: 7rem;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+/* .trend-header {
+    border: 1px solid black;
+} */
+
+.announcements-div div > p {
+    font-size: 13px;
 }
 
 .trending-div {
     border-radius: 15px;
-    grid-row: 2 / 3;
+    /* grid-row: 2 / 3; */
 }
 
 .trending-div div {
@@ -241,6 +283,15 @@
 .profile-line {
     display: grid;
     grid-template-columns: 1fr 4fr;
+}
+
+.profile-line p {
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+.profile-line p > span{
+    font-weight: 560;
 }
 
 hr {
